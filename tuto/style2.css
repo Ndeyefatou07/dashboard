@@ -429,7 +429,6 @@ body.dark .switch::before{
       }
       /* modal */
       .modal{
-        width: 60%;
         position: fixed;
         height: auto;
         top:50%;
@@ -440,11 +439,13 @@ body.dark .switch::before{
         border-top: 20px groove dodgerblue;
         opacity: 0;
         z-index: -1;
+        transition: 0.1s ease-in-out;
         
       }
       .modal.active{
         opacity: 1;
         z-index: 1;
+        width: 60%;
       }
       .modal .close-icon{
         position: absolute;

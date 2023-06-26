@@ -4,8 +4,11 @@
 const sidebar=document.querySelector(".sidebar");
 const menuLinks=document.querySelector(".menu-links");
 const toggle=document.querySelector(".toggle");
-var addBtn=document.querySelector("#add-btn");
-var modal=document.querySelector(".modal");
+
+var closeBtn=document.querySelector(".close-icon");
+
+
+
 // const searchBtn=body.querySelector(".search-box");
 // const modeSwitch=body.querySelector(".toggle-switch");
 // const modeText=body.querySelector(".mode-text");
@@ -21,9 +24,19 @@ toggle.addEventListener("click",()=>{
     
 
 });
+var addBtn=document.querySelector("#add-btn");
+var modal=document.querySelector(".modal");
 addBtn.onclick=function(){
     modal.classList.add("active");
 }
+closeBtn.addEventListener("click",()=>{
+    modal.classList.remove("active");
+    
+
+});
+var enregistrerbtn=document.querySelector(".enregistrer");
+enregistrerbtn
+
 
 
 
