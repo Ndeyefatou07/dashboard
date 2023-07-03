@@ -234,7 +234,7 @@
                     <button id="add-btn"><i class="fas fa-plus"></i>&nbsp;Add user</button>
                 </div>
             </div>
-            <table>
+            <table >
                 <tr>
                     <th>Nom</th>
                     <th>Prenom</th>
@@ -242,51 +242,9 @@
                     <th>TEL</th>
                     <th>Action</th>
                 </tr>
-                <tr>
-                    <td>Niang</td>
-                    <td>Ndeye Fatou </td>
-                    <td>ndeye@gmail.com</td>
-                    <td>775036065</td>
-                    <td>
-                        <button><i class="fas fa-eye"></i></button>
-                        <button style="background-color: red;"><i class="fas fa-trash"></i></button>
-                        
+                <tbody id="userTable">
 
-                    </td>
-                </tr>
-                <tr>
-                    <td>Niang</td>
-                    <td>Ndeye Fatou </td>
-                    <td>ndeye@gmail.com</td>
-                    <td>775036065</td>
-                    <td>
-                        <button><i class="fas fa-eye"></i></button>
-                        <button style="background-color: red;"><i class="fas fa-trash"></i></button>
-                       
-                    </td>
-                </tr>
-                <tr>
-                    <td>Niang</td>
-                    <td>Ndeye Fatou </td>
-                    <td>ndeye@gmail.com</td>
-                    <td>775036065</td>
-                    <td>
-                        <button><i class="fas fa-eye"></i></button>
-                        <button style="background-color: red;"><i class="fas fa-trash"></i></button>
-                        
-                    </td>
-                </tr>
-                <tr>
-                    <td>Niang</td>
-                    <td>Ndeye Fatou </td>
-                    <td>ndeye@gmail.com</td>
-                    <td>775036065</td>
-                    <td>
-                        <button><i class="fas fa-eye"></i></button>
-                        <button style="background-color: red;"><i class="fas fa-trash"></i></button>
-                        
-                    </td>
-                </tr>
+                </tbody>
             </table>
             <div class="modal">
                 <i class="fas fa-times-circle close-icon"></i>
@@ -298,25 +256,27 @@
                     </div>
                 </div>
                 <div class="right-modal">
+                   <form id="Registre">
                     <div class="input-box">
                         <label for="nom">Nom</label>
-                        <input type="text" nom>
+                        <input type="text" id="nom">
                     </div>
                     <div class="input-box">
-                        <label for="prenom">Prenom</label>
-                        <input type="text" prenom>
+                        <label for="prenom" >Prenom</label>
+                        <input type="text" id="prenom">
                     </div>
                     <div class="input-box">
                         <label for="email">E-mail</label>
-                        <input type="text" email>
+                        <input type="text" id="email">
                     </div>
                     <div class="input-box">
-                        <label for="tel">Tel</label>
-                        <input type="text" tel>
+                        <label for="tel" >Tel</label>
+                        <input type="text" id="tel">
                     </div>
+                   </form>
                     <div class="input-box">
                         <button id="enregistrer">Enregistrer</button>
-                        <button disabled="disabled" style="background-color: red;">Ajouter</button>
+                        <button disabled="disabled" style="background-color: red;" id="ajouter">Ajouter</button>
                     </div>
                 </div>
             </div>
